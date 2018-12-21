@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head><meta charset="UTF-8">
+<style>
+td {
+	border: thin solid black;
+}
+
+th {
+	border: medium solid black;
+}
+
+td.money {
+	text-align: right;
+}
+</style>
+<title>DENEME SAYFASI</title>
+</head>
+<body>
+	<wicket:link>
+		<a href="HesapPlanProces.html">HESAP</a>
+	</wicket:link>
+	<wicket:link>
+		<a href="YevmiyeGiris.html">MIF</a>
+	</wicket:link>
+	<h3>Filtre Alanı</h3>
+	<div id="filtre">
+		<table>
+			<tr>
+				<td><label>Limit</label></td>
+				<td><input type="text" wicket:id="limit"></td>
+			</tr>
+		</table>
+	</div>
+	<form wicket:id="form">
+		<div style="border: 1px; border-color: black;" id="icerik">
+			<table>
+				<tr>
+					<td><label>Ad</label></td>
+					<td><input type="text" wicket:id="name"></td>
+				</tr>
+				<tr>
+					<td><label>Soyad</label></td>
+					<td><input type="text" wicket:id="surname"></td>
+				</tr>
+				<tr>
+					<td><label>Yaş</label></td>
+
+					<td><input type="text" wicket:id="yas"></td>
+				</tr>
+			</table>
+		</div>
+		<input type="submit" value="KAYDET">
+	</form>
+	<table wicket:id="table"></table>
+
+</body>
+</html>

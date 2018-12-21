@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<style>
+td {
+	border: thin solid black;
+}
+
+th {
+	border: medium solid black;
+}
+
+td.money {
+	text-align: right;
+}
+</style>
+<title>MUHASEBE ISLEM FISI</title>
+</head>
+<body>
+	<wicket:link>
+		<a href="HomePage.html">ANA SAYFA</a>
+	</wicket:link>
+	<wicket:link>
+		<a href="HesapPlanProces.html">HESAP PLANI</a>
+	</wicket:link>
+	<form wicket:id="anaform">
+		<h3>Yevmiye Giriş Ekranı</h3>
+		<table>
+			<tr>
+				<td><label> İlgilinin Adı</label></td>
+				<td><input type="text" wicket:id="ilgilininAdi"></td>
+			</tr>
+			<tr>
+				<td><label> Hazırlayanın Adı</label></td>
+				<td><input type="text" wicket:id="hazirlayaninAdi"></td>
+			</tr>
+			<tr>
+				<td><label> Açıklama</label></td>
+				<td><textarea wicket:id="aciklama"></textarea></td>
+			</tr>
+		</table>
+		<button wicket:id="yeniSatir">Yeni Satır</button>
+		<table wicket:id="container">
+			<tr>
+				<th>Hesap Kodu</th>
+				<th>Borç</th>
+				<th>Alacak</th>
+			</tr>
+			<tr wicket:id="yevmiyeList">
+				<td><input type="text" wicket:id="hesapKod"></td>
+				<td><input type="text" wicket:id="borc"></td>
+				<td><input type="text" wicket:id="alacak"></td>
+			</tr>
+		</table>
+		<input type="submit" value="YevmiyeKaydet">
+	</form>
+	<div wicket:id="feed"></div>
+</body>
+</html>

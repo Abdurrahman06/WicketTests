@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<style>
+td {
+	border: thin solid black;
+}
+
+th {
+	border: medium solid black;
+}
+
+td.money {
+	text-align: right;
+}
+</style>
+<title>HESAP PLANI</title>
+</head>
+<body>
+	<wicket:link>
+		<a href="HomePage.html">ANA SAYFA</a>
+	</wicket:link>
+	<form wicket:id="formhp">
+		<input type="text" wicket:id="hesapKod"> <input type="text"
+			wicket:id="hesapAdi"> <input type="submit" value="KAYDET">
+	</form>
+	<table wicket:id="table"></table>
+
+</body>
+</html>
